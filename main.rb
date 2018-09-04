@@ -10,6 +10,16 @@ budget = Budget.new("Vanessa", {"Rent" => 1000, "Food" => 100}, {"Ballet tickets
 #  p budget.non_negotiables_total
 #  p budget.negotiables_total
  
+require 'tty-font'
+font = TTY::Font.new(:standard)
+star_wars_font = TTY::Font.new(:starwars)
+puts "========================================================================="
+puts ""
+puts star_wars_font.write("Carrot")
+puts font.write("Budget App")
+puts ""
+puts "========================================================================="
+
 puts "Welcome to the Carrot Budget App"
 
 while true

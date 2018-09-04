@@ -55,6 +55,13 @@
         puts "Please enter this as a fortnightly figure:"
         pay_per_fortnight = gets.strip.to_f
 
+        while pay_per_fortnight <= 0
+            puts "Please enter an amount greater than 0"
+            pay_per_fortnight = gets.strip.to_f
+        end
+
+        
+
         # gather savings goals and hold them in a hash
         puts "Now we want to know what exciting dreams you want to save for."
         puts "You can enter more than one if you wish."

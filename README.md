@@ -1,5 +1,9 @@
 # Term 1 terminal app project
 
+## Installation
+Install gemfile (show code below)
+
+
 ## Brainstorming session
 Potential idea #1 - Vanessa suggested app that would pull weather data using API's and popular travel locations and based on weather data during the time of year that you would like to go would recommend possible locations based on historical weather data that would make your holiday more enjoyable! :)
 
@@ -53,4 +57,10 @@ We created our budget class and defined our attributes that the user is going to
 Throughout all this we require_relative'd the different files that we used.
 
 Day 1 - Afternoon
-Begun work on the user interface. Wrote the micro-copy to prompt the user to enter their budget data, and used this data to create a budget object with our budget hash.
+Begun work on the user interface. Wrote the micro-copy to prompt the user to enter their budget data, and used this data to create a budget object with our budget hash. Whilst working on the user interface we looked at the possibility of keeping as many calculations as possible out of the 'interface' and 'main' files. We found that keeping the code to manage the data based on user input was best kept in the 'interface' file as it would have resulted in the creation of unnecessary classes and/or modules.
+
+Testing was performed on the code, with a prepared data set that was entered automatically instead of us having to walk through the entire app everytime to work out the bugs.
+
+The first gem that we put into use was 'tty-table', after failing to get it working we discovered another gem called 'terminal-table' which works excellently. We pulled the user input data into another file 'displaybudget' where the presentation of the sum of the data the user has entered would be configured to appear in the table using the new gem. During this process we decided that we would like to keep the percentage recommendations based on the users saving potential to be kept in a seperate table, and have set out a new method in the 'conversions' file for this to be completed tomorrow.
+
+The second gem that will be put in use is 'tty-font' that will have a welcome screent to greet the user when the application is launched. There is potential that we can put other styled text in various places throughout the user interface to make for a more enjoyable user experience.
