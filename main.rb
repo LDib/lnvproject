@@ -1,9 +1,10 @@
 require_relative 'budget.rb'
 require_relative 'conversions.rb'
 require_relative 'interface.rb'
+require_relative 'displaybudget.rb'
 
-# budget = Budget.new("Vanessa", {"Rent" => 1000, "Food" => 100}, {"Ballet tickets" => 100, "Take-away coffee" => 10}, 1500, 
-#     {"Holiday to Korea" => 2000})
+budget = Budget.new("Vanessa", {"Rent" => 1000, "Food" => 100}, {"Ballet tickets" => 100, "Take-away coffee" => 10}, 1500, 
+    {"Holiday to Korea" => 2000})
 # budget.calculate_totals
 
 #  p budget.non_negotiables_total
@@ -17,8 +18,8 @@ while true
     case choice
     when "1"
     when "2"
-       budget = get_user_data
-       p budget
+       #budget = get_user_data
+       display_budget(budget)
     when "3"
         break
     end

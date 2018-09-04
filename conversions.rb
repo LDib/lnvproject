@@ -7,7 +7,7 @@ module Conversions
         amount * 100
     end
 
-    def to_dollars (amount)
+    def self.to_dollars (amount)
         '%.2f' % (amount/100.00)
     end
 

@@ -14,6 +14,10 @@ class Budget
         @negotiables = convert_hash_to_cents(negotiables)
         @pay_per_fortnight = to_cents(pay_per_fortnight)
         @savings_goals = convert_hash_to_cents(savings_goals)
+        @non_negotiables_total = sum_hash(@non_negotiables)
+        @negotiables_total = sum_hash(@negotiables)
+        @savings_goals_total = sum_hash(@savings_goals)
+        @disposable_income = @pay_per_fortnight - (@non_negotiables_total + @negotiables_total)
     end
 
     def sum_hash(hash)
@@ -24,15 +28,15 @@ class Budget
         total
     end
 
-    def calculate_totals
-        @non_negotiables_total = sum_hash(@non_negotiables)
-        @negotiables_total = sum_hash(@negotiables)
-        @savings_goals_total = sum_hash(@savings_goals)
-    end
+    # def calculate_totals
+    #     @non_negotiables_total = sum_hash(@non_negotiables)
+    #     @negotiables_total = sum_hash(@negotiables)
+    #     @savings_goals_total = sum_hash(@savings_goals)
+    # end
 
-    def pay_breakdown
-        @disposable_income = @pay_per_fortnight - (@non_negotiables_total + @negotiables_total)
-    end
+    # def pay_breakdown
+    #     @disposable_income = @pay_per_fortnight - (@non_negotiables_total + @negotiables_total)
+    # end
 
 
 end
