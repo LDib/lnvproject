@@ -40,3 +40,7 @@ SPECS -
 4. Gems to use
 - Terminal table for outputing budget details
 - TTY gems for file handling more pleasing outputs (better user interface)
+
+## Project Timeline
+
+![project-timeline](lnvproject-timeline.png)
