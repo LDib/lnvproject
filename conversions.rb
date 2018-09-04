@@ -2,6 +2,7 @@
 
 
 module Conversions
+
     def to_cents (amount)
         amount * 100
     end
@@ -17,4 +18,7 @@ module Conversions
         hash
     end
 
+    def convert_to_percent ()
+
+    end
 end
