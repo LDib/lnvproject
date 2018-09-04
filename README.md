@@ -44,3 +44,8 @@ SPECS -
 ## Project Timeline
 
 ![project-timeline](lnvproject-timeline.png)
+
+## Coding it out
+We created our budget class and defined our attributes that the user is going to first input. Within the budget class we specified how the atrributes were going to be presented by specifying the calculations that were going to occur. In orer to keep the code tidy we created a seperate file called 'conversions' where we created a module that would specify the calculations we wanted to call on the attributes for the calculation phase and also for the presentation phase. We had to create two seperate methods for conversion to cents due to the fact that some values were stored as integers by themselves and others as integers within hashes. We used the ruby method .each to perform calculations on and replace all of the values that were stored in hashes.
+
+Throughout all this we require_relative'd the different files that we used.
