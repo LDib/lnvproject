@@ -17,8 +17,4 @@ module Conversions
         end
         hash
     end
-
-    def convert_to_percent ()
-
-    end
 end
