@@ -56,7 +56,7 @@
         pay_per_fortnight = gets.strip.to_f
 
         while pay_per_fortnight <= 0
-            puts "Please enter an amount greater than 0"
+            puts "Please enter a number greater than 0"
             pay_per_fortnight = gets.strip.to_f
         end
 
