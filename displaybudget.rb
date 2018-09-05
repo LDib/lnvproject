@@ -58,7 +58,7 @@ def display_budget (budget)
         budget_rows << table_row
     end
 
-# Get pay_per_fortnite out of the budget object
+# Get pay_per_fortnight out of the budget object
 # Put that data into the right format to be put into the table
 
     pay_in_dollars = "$#{Conversions.to_dollars(budget.pay_per_fortnight)}"
@@ -104,7 +104,7 @@ def display_budget (budget)
             puts "Currently there is no remaining income to put towards your savings goal :("
             # present a percentage of negotiables to reduce by in order to keep expenses lower than income
             overspend = budget.negotiables_total - discretionary
-            puts "You need to reduce your non-crucial spending by $#{Conversions.to_dollars(overspend)}"
+            puts "You need to reduce your non-crucial spending by $#{Conversions.to_dollars(overspend)} per fortnight."
             puts    
         end
     else

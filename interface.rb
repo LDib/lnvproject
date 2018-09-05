@@ -45,12 +45,13 @@
         get_data_into_a_hash(non_negotiables)
 
         # gather inputs for negotiable items and hold them in a hash
+        puts
         puts "Next we will ask you for the expenses that make life not suck."
         puts "An example might be eating out with friends, or going to see a movie."
         negotiables = Hash.new
         get_data_into_a_hash(negotiables)
         # gather pay data
-
+        puts
         puts "Next we will ask you how much you get paid."
         puts "Please enter this as a fortnightly figure:"
         pay_per_fortnight = gets.strip.to_f
@@ -63,6 +64,7 @@
         
 
         # gather savings goals and hold them in a hash
+        puts
         puts "Now we want to know what exciting dreams you want to save for."
         puts "You can enter more than one if you wish."
         savings_goals = Hash.new
