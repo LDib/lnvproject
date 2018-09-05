@@ -36,7 +36,9 @@ $ gem install tty-font
 $ gem install terminal-table
 ```
 
-Run this command from the app folder in your terminal and follow the prompts.
+**Running the App**
+
+Run this command from the src folder in your terminal and follow the prompts.
 
 ```
 $ ruby main.rb
